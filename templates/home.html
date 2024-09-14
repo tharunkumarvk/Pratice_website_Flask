@@ -11,14 +11,16 @@
                 object-fit: cover;
             }
         </style>
-        <title>Jovian Careers</title>
+        
         <title> Careers Website </title>
         <!-- You can include CSS or JavaScript here -->
     </head>
 
     <body> <!-- what we want to show on the page -->
+        {% include 'nav.html' %}
         <div class="container"> <!-- outer div to alignment and use class to use bootstrap -->
-        <h1 class="text-center mt-2 mb-4">CARRER WEBPAGE</h1> <!-- h1= big header can be used only once; h2 to h6 can be used as desired -->
+            <h1 class="text-center mt-3 mb-4"> CAREER WEBPAGE</h1>
+<!-- h1= big header can be used only once; h2 to h6 can be used as desired -->
         <img class = "img-fluid" id = "banner" src="https://ef816bf8-26b6-4f18-a2c2-82f88a180fdd-00-16ndb7rxk40gf.sisko.replit.dev/static/baner.jpg"> <!-- unsplash.com; url -->
         <h2 class="text-center mt-2 mb-4">About Careers</h2>
         <p> <!-- lorem ipsum -->
@@ -35,6 +37,6 @@
         <button class="btn btn-primary mt-4 mb-2 "> Contact US</button>
         </div>
         <!-- mt and mb for spacing top and bottom respectively-->
-        
+    {% include 'footer.html' %}
     </body>
 </html>
