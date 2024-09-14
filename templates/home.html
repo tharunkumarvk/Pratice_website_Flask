@@ -25,9 +25,14 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
         </p>
         <h2>Open Positions</h2>
-        <p>To do: show jobs</p> 
-        <div class = "text-center">
-        <button class="btn btn-primary mb-4"> Contact US</button>
+        <div>
+            {% for job in jobs %}
+                {% include "jobitem.html" %}
+            {% endfor %}
+        
+        </div> <!-- To display the dynamic data --><!-- {{jobs}} is a jinja2 syntax -->
+        <div class = "text-center ">
+        <button class="btn btn-primary mt-4 mb-2 "> Contact US</button>
         </div>
         <!-- mt and mb for spacing top and bottom respectively-->
         
